@@ -1,0 +1,160 @@
+body{
+    font-family: Verdana, Tahoma, sans-serif ;
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    border: 1px solid RGBa;
+    width: 1282px;
+    height: 700px;
+    background-color: #b4256d;
+}
+nav{
+    width: 100%;
+    background-color: RGBa;
+}
+
+nav > ul{
+    margin: 0px;
+    padding: 0px;
+}
+nav li{
+    list-style-type: none;
+}
+nav > ul > li{
+    float:left;
+    position: relative;
+}
+nav > ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.submenu{
+    display: none;
+}
+nav input[type=checkbox]{
+    display: none;
+}
+nav label{
+    display: none;
+}
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+nav > ul > li > a{
+    padding: 4px 5px;
+    color:#FFF;
+}
+nav > ul > li:hover a{
+    padding: 10px 25px 10px 25px ;
+}
+
+.menu1:hover{
+    border-top: 5px solid #7df0e6da;
+    background-color: RGBa(228, 77, 38, 0.15)
+}
+.menu2:hover{
+    border-top: 5px solid #f02c25ee;
+    background-color: RGBa(000, 112, 192, 0.15)
+}
+.menu3:hover{
+    border-top: 5px solid #e086ce;
+    background-color: RGBa(241, 211, 79, 0.15);
+}
+.menu4:hover{
+    border-top: 5px solid #eb597e;
+    background-color: RGBa(220, 220, 220, 0.15);
+}
+.menu5:hover{
+    border-top: 5px solid #f2f53c;
+    background-color: RGBa(220, 220, 220, 0.15);
+}
+
+nav input[type=checkbox]:checked ~ ul{
+    display: block;
+}
+@media screen and (max-width : 780px){
+    .menu-mobile{
+        display: block;
+        color: #FFF;
+        background-color: RGBa(29, 197, 151, 097);
+        text-align: center;
+        padding: 12px 0px;
+    }
+    nav ul{
+        display: none;
+    }
+    nav ul li, nav ul li a{
+        width:100%;
+        text-align: center;
+    }
+    nav ul li a,nav ul li:hover a{
+        padding: 10px 0px;
+    }
+    nav li:hover .submenu{
+        display: block;
+        position: static;
+    }
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+body{
+    background-color:#b4256d;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the search field */
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .tableau_produit{
+      border-collapse: collapse;
+      width:100%;
+      
+  }
+  .tableau_produit tr{
+      border:5px solid black;
+  }
+  .tableau_produit td{
+    border:5px solid black;
+}
+.roug{
+    background-color: rgb(255, 0, 255);
+}
